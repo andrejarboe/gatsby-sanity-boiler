@@ -1,6 +1,6 @@
 
 {
-    "scripts": {
-        "start": "cd studio && sanity deploy && sanity graphql deploy -y && cd .. && cd web && npm start"
-    }
+  "scripts": {
+    "start": "cd studio && sanity deploy && sanity graphql deploy -y && sanity start && cd .. && cd web && npm start"
+  }
 }

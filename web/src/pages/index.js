@@ -1,7 +1,7 @@
-import React from "react"
-import Hero2 from "../components/Hero/Hero2"
-import MainLayout from "../components/Layouts/MainLayout"
-import FetchData from "../examples/FetchData"
+import React from 'react';
+import AllRecipes from '../components/AllRecipes';
+import Hero2 from '../components/Hero/Hero2';
+import MainLayout from '../components/Layouts/MainLayout';
 
 export default function Home() {
   return (
@@ -11,8 +11,8 @@ export default function Home() {
       </head> */}
       <main className="">
         <Hero2 />
+        <AllRecipes />
       </main>
-      {/* <FetchData /> */}
     </MainLayout>
-  )
+  );
 }

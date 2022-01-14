@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
+import AllRecipes from "../components/AllRecipes"
 import MainLayout from "../components/Layouts/MainLayout"
 
 export default function Recipes() {
@@ -30,6 +31,9 @@ export default function Recipes() {
           </div>
         </div>
       </section>
+      <div className="container mx-auto relative overflow-hidden  p-4">
+      <AllRecipes />
+      </div>
     </MainLayout>
-  )
+  );
 }

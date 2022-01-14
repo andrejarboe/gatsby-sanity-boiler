@@ -9,18 +9,23 @@ import category from './documents/category';
 import page from './documents/page';
 import projects from './documents/projects';
 import social from './documents/social';
+import tags from './documents/tags';
 
 
 // Object types
 import feature from './objects/feature'
 import openGraph from './objects/openGraph';
+import images from './objects/images';
+import instructions from './objects/instructions';
+import ingredients from './objects/ingredients';
+import tools from './objects/tools';
 
 // Plug Types
 import features from './plugs/features';
 import hero from './plugs/hero';
 import socialCallout from './plugs/socialCallout';
 import recipes from './documents/recipes';
-import mainImage from './objects/mainImage';
+import mainImage from './plugs/mainImage';
 
 
 
@@ -42,6 +47,10 @@ export default createSchema({
     // { type: 'typename' } in other document schemas
     feature,
     mainImage,
+    images,
+    instructions,
+    ingredients,
+    tools,
 
     // The following are document types which will appear
     // in the studio.
@@ -49,6 +58,7 @@ export default createSchema({
     projects,
     page,
     social,
-    recipes
+    recipes,
+    tags
   ]),
 });

@@ -8,5 +8,7 @@ sanity deploy
 sanity graphql deploy
 sanity start
 
+Web:
 
-cd studio && sanity deploy && sanity graphql deploy -y && sanity start && cd .. && cd web && npm start
+cd web && 
+npm start

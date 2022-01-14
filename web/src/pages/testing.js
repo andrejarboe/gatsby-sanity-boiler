@@ -4,7 +4,7 @@ import MainLayout from "../components/Layouts/MainLayout"
 import Gallery from "../components/Gallery"
 
 export default function Testing({ data }) {
-  const author = data.site.info.author
+  // const author = data.site.info.author
 
   return (
     <MainLayout>
@@ -15,23 +15,23 @@ export default function Testing({ data }) {
   )
 }
 
-export const data = graphql`
-  {
-    site {
-      info: siteMetadata {
-        author
-        description
-        simpleData
-        title
-        complexData {
-          age
-          name
-        }
-        person {
-          age
-          name
-        }
-      }
-    }
-  }
-`
+// export const data = graphql`
+//   {
+//     site {
+//       info: siteMetadata {
+//         author
+//         description
+//         simpleData
+//         title
+//         complexData {
+//           age
+//           name
+//         }
+//         person {
+//           age
+//           name
+//         }
+//       }
+//     }
+//   }
+// `

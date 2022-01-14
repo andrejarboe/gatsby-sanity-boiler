@@ -19,6 +19,8 @@ import openGraph from './objects/openGraph';
 import features from './plugs/features';
 import hero from './plugs/hero';
 import socialCallout from './plugs/socialCallout';
+import recipes from './documents/recipes';
+import mainImage from './objects/mainImage';
 
 
 
@@ -39,12 +41,14 @@ export default createSchema({
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     feature,
+    mainImage,
 
     // The following are document types which will appear
     // in the studio.
     category,
     projects,
     page,
-    social
+    social,
+    recipes
   ]),
 });

@@ -1,14 +1,19 @@
-import { Link } from "gatsby"
-import React from "react"
-import MainLayout from "../components/Layouts/MainLayout"
+import { Link, graphql } from 'gatsby';
+import React from 'react';
+import RecipesList from '../components/RecipesList';
+import MainLayout from '../components/Layouts/MainLayout';
 
-export default function Contact() {
+export default function Contact({
+  data: {
+    allSanityRecipes: { nodes: recipes },
+  },
+}) {
   return (
     <MainLayout>
       <head>
         <title>Simply Recipes | Contact</title>
       </head>
-      <main className="py-20">
+      <main className="pb-20">
         <div className="py-20 bg-green-200">
           <section className="container mx-auto max-w-6xl flex flex-col px-4 md:flex-row space-y-4">
             <article className="md:w-1/2 p-10 flex flex-col space-y-3 font-semibold text-gray-500">
@@ -85,7 +90,35 @@ export default function Contact() {
             </article>
           </section>
         </div>
+
+        <section className="container mx-auto px-4 py-8">
+          <h5 className="my-8 text-2xl text-center">Look at these Recipes</h5>
+          <RecipesList recipes={recipes} />
+        </section>
       </main>
     </MainLayout>
-  )
+  );
 }
+
+export const query = graphql`
+  {
+    allSanityRecipes(
+      filter: { featured: { eq: true } }
+      sort: { fields: title, order: ASC }
+    ) {
+      nodes {
+        _id
+        title
+        slug {
+          current
+        }
+        mainImage {
+          alt
+          asset {
+            gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+          }
+        }
+      }
+    }
+  }
+`;

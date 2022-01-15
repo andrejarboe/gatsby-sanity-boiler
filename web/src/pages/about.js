@@ -37,7 +37,7 @@ export default function about({
           <StaticImage
             src="../assets/images/about.jpg"
             alt="Fusion Cuisine on a Plate"
-            className="mt-6 md:mt-0 rounded"
+            className="mt-6 md:mt-0 rounded-xl"
             placeholder="blurred"
           />
         </section>

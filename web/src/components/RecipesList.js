@@ -8,7 +8,7 @@ export default function RecipesList({ recipes = [] }) {
       {/* <div className="grid grid-cols-3 space-x-4 space-y-4 m-4"> */}
       {/* <div className="grid grid-cols-3 gap-4"> */}
       {/* <div className="py-4 flex flex-wrap justify-between"> */}
-      <div className="lg:grid grid-cols-6 gap-10 space-y-6 lg:space-y-0">
+      <div className="grid grid-cols-6 gap-10 space-y-0">
         {recipes.map((recipe) => {
           const { id, title, mainImage, prepTime, cookTime, slug } = recipe;
           const pathToImage = getImage(mainImage.asset.gatsbyImageData);
@@ -16,7 +16,7 @@ export default function RecipesList({ recipes = [] }) {
             <Link
               key={id}
               to={`/${slug.current}`}
-              className=" col-span-2 flex flex-col rounded-lg"
+              className="col-span-6 sm:col-span-3 md:col-span-2 flex flex-col rounded-lg"
             >
               <GatsbyImage
                 image={pathToImage}

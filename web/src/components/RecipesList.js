@@ -16,7 +16,7 @@ export default function RecipesList({ recipes = [] }) {
             <Link
               key={id}
               to={`/${slug.current}`}
-              className=" col-span-2 shadow flex flex-col rounded-lg"
+              className=" col-span-2 flex flex-col rounded-lg"
             >
               <GatsbyImage
                 image={pathToImage}

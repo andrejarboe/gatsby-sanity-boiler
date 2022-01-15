@@ -10,7 +10,6 @@ import { useStaticQuery, graphql } from 'gatsby';
            title
            cookTime
            prepTime
-           servings
            id
            slug {
              current

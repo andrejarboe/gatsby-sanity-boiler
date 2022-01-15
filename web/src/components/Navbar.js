@@ -7,26 +7,37 @@ export default function Navbar() {
 
   return (
     <nav className="text-gray-600 shadow-lg">
-      <div className="container flex flex-col md:flex-row justify-between px-4 py-4 md:py-6 mx-auto py">
+      <div className="container flex flex-col md:flex-row justify-between max-w-6xl mx-auto px-8 py-4 md:py-6">
         {/* left header  */}
-        <div className={'flex items-center justify-between pb-4 md:pb-0' +
-          ' '+ 
-          (show ? 'pb-4' : 'pb-0')}>
+        <div
+          className={
+            'flex items-center justify-between pb-4 md:pb-0' +
+            ' ' +
+            (show ? 'pb-4' : 'pb-0')
+          }
+        >
           <Link
             to="/"
             className="text-2xl font-bold text-teal-800 drop-shadow-2xl"
           >
             Simply Recipes
           </Link>
-          <button 
+          <button
             onClick={() => setShow(!show)}
-          className="flex justify-center items-center md:hidden">
+            className="flex justify-center items-center md:hidden"
+          >
             <MenuIcon className="h-8 w-auto text-2xl text-purple-500 flex items-center justify-center " />
           </button>
         </div>
         {/* right header */}
-        <div className={'flex flex-col md:flex-row md:flex items-center justify-end text-center  md:space-x-4 space-y-4 md:space-y-0' + ' ' + (show ? 'block' : 'hidden')}>
-        {/* <div className="flex flex-col md:flex-row items-center justify-center text-center px-6 space-x-4 space-y-4 md:space-y-0 "> */}
+        <div
+          className={
+            'flex flex-col md:flex-row md:flex items-center justify-end text-center  md:space-x-4 space-y-4 md:space-y-0' +
+            ' ' +
+            (show ? 'block' : 'hidden')
+          }
+        >
+          {/* <div className="flex flex-col md:flex-row items-center justify-center text-center px-6 space-x-4 space-y-4 md:space-y-0 "> */}
           <Link
             to="/"
             className="hover:text-gray-900 font-bold w-full border-t pt-4 md:border-t-0 md:pt-0"
@@ -66,5 +77,5 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
-  )
+  );
 }

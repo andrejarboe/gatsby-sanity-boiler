@@ -10,7 +10,7 @@ export default function Recipes() {
         <title>Simply Recipes | Recipes</title>
       </head>
       <section>
-        <div className="container mx-auto max-w-6xl">
+        <div className="max-w-6xl mx-auto px-8">
           <div className="relative overflow-hidden shadow-lg cursor-pointer">
             <img
               className="object-cover w-full h-[500px]"
@@ -32,7 +32,7 @@ export default function Recipes() {
         </div>
       </section>
       <div className="container mx-auto relative overflow-hidden  p-4">
-      <AllRecipes />
+        <AllRecipes />
       </div>
     </MainLayout>
   );

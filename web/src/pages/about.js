@@ -11,7 +11,7 @@ export default function about({
 }) {
   return (
     <MainLayout>
-      <main className="mt-4 px-4">
+      <main className="mt-4 max-w-6xl mx-auto px-8">
         <section className="container mx-auto px-4 md:grid md:grid-cols-2">
           <article className="text-lg">
             <div className="md:w-10/12 space-y-6">

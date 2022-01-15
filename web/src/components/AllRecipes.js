@@ -38,10 +38,13 @@ export default function AllRecipes() {
     console.log(recipes);
 
   return (
-    <section className="container mx-auto p-4">
+    // <section className="container mx-auto p-4">
+    <section className="max-w-6xl mx-auto px-8">
       {/* <h4 className="text-2xl">All Recipes</h4> */}
-      <TagsList recipes={recipes} />
-      <RecipesList recipes={recipes} />
+      <div className="md:flex md:space-x-16">
+        <TagsList recipes={recipes} className="flex-grow" />
+        <RecipesList recipes={recipes} className="md:w-2/3" />
+      </div>
     </section>
   );
 }

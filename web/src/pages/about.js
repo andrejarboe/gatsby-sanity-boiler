@@ -4,7 +4,7 @@ import React from 'react';
 import RecipesList from '../components/RecipesList';
 import MainLayout from '../components/Layouts/MainLayout';
 
-export default function about({
+export default function About({
   data: {
     allSanityRecipes: { nodes: recipes },
   },

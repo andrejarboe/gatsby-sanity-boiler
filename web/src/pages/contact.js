@@ -10,9 +10,6 @@ export default function Contact({
 }) {
   return (
     <MainLayout>
-      <head>
-        <title>Simply Recipes | Contact</title>
-      </head>
       <main className="pb-20">
         <div className="py-20 bg-green-200">
           <section className="container mx-auto max-w-6xl flex flex-col px-4 md:flex-row space-y-4">

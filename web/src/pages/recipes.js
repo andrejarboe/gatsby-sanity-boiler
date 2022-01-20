@@ -6,9 +6,6 @@ import MainLayout from "../components/Layouts/MainLayout"
 export default function Recipes() {
   return (
     <MainLayout>
-      <head>
-        <title>Simply Recipes | Recipes</title>
-      </head>
       <section>
         <div className="max-w-6xl mx-auto px-8">
           <div className="relative overflow-hidden shadow-lg cursor-pointer">

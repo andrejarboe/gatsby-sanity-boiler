@@ -5,9 +5,6 @@ import MainLayout from "../components/Layouts/MainLayout"
 export default function Tags() {
   return (
     <MainLayout>
-      <head>
-        <title>Simply Recipes | Tags</title>
-      </head>
       <section>
         <div className="max-w-6xl mx-auto px-8">
           <div className="relative overflow-hidden shadow-lg cursor-pointer">
